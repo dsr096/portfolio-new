@@ -1,0 +1,95 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f7f7f7 0%, #ffffff 100%);
+    color: red;
+    font-size: 16px;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Header Styles */
+  .header {
+    font-size: 50px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  
+  /* Button Styles */
+  .let {
+    background-color: #00b894;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .let:hover {
+    background-color: #008d75;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .let:active {
+    background-color: #006b56;
+    transform: translateY(0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effects */
+  .let:hover {
+    background-color: #00b894;
+    transform: scale(1.05);
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .header {
+      font-size: 40px;
+    }
+  
+    .let {
+      font-size: 18px;
+      padding: 12px 30px;
+    }
+  }
+
